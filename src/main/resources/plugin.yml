@@ -1,0 +1,22 @@
+name: KillFeed
+description: 
+version: 1.0
+author: Zeradris
+main: net.zeradris.main.Main
+softdepend: [PlaceholderAPI]
+loadbefore: [PlaceholderAPI]
+
+commands:
+   killfeed:
+      usage: /<command>
+   addkill:
+      usage: /<command>
+   test:
+      usage: /<command> 
+   khologram:
+      usage: /<command>  
+permissions:
+   killfeed.admin:
+      description: Access to every admin command there is!
+      default: op 
+   

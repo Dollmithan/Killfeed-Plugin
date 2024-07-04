@@ -1,0 +1,51 @@
+
+# first message is the header, last is the footer
+# message in the center is what will be used for each kill to be registered!
+
+# -------------- global variables --------------
+
+# %timenow% - current time in format: hh:mm:ss
+# %datenow% - current date in format: dd:mm:yyyy
+# use color codes (&) or hexcodes for colors.
+
+
+# killfeed header! can have any amount of lines. this will be displayed above the killfeed
+
+killfeed_header:
+  - " -- killfeed --"
+
+# killfeed footer, can also have any amount of lines, will be displayed above the killfeed
+  
+killfeed_footer:
+  - " -- killfeed --"
+  
+# replace X with the number!! examples below!
+# %killfeed_x_killer% - killer player's name
+# %killfeed_x_victim% - victim player's name
+# %killfeed_x_timestamp% - kill time in format: hh:mm:ss
+# %killfeed_x_datestamp% - kill date in format: dd:mm:yyyy
+  
+# only 5 messages! you can make it any length from 1-5, dont exceed 5!!!
+killfeed_message:
+  - "1. [%killfeed_1_timestamp%] %killfeed_1_killer% killed %killfeed_1_victim%"
+  - "2. [%killfeed_2_timestamp%] %killfeed_2_killer% killed %killfeed_2_victim%"
+  - "3. [%killfeed_3_timestamp%] %killfeed_3_killer% killed %killfeed_3_victim%"
+  - "4. [%killfeed_4_timestamp%] %killfeed_4_killer% killed %killfeed_4_victim%"
+  - "5. [%killfeed_5_timestamp%] %killfeed_5_killer% killed %killfeed_5_victim%"
+  
+# message to return when there isnt a kill, for example if there are only 4 kills registered currently
+# the 5th one, or the empty one is going to say this:
+# %killnumber% can be used for which slot it is
+
+empty_message: "Empty"
+
+# send the kill messages in chat when a player kills another player
+kill_messages_enabled: true 
+
+# kill message to send in chat (if enabled) 
+# default - default message
+# %killer% - killer player's name
+# %victim% - victim player's name
+
+# use global variables
+kill_message: 'default'

@@ -1,0 +1,4 @@
+--- the killfeed will be cached here if caching is enabled in config.yml
+
+-------------------------------------------------------------------------
+

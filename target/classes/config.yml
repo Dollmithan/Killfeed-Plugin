@@ -1,0 +1,20 @@
+
+# recieve a notification whenever a new version of my plugin comes out!
+notify_version: true
+
+# whether or not to chache the killfeed (save all kills to a file)
+# this can be used to identify people that farm kills
+# or abuse any other feature that may be on your server
+
+# cached to: killfeed_cache.txt
+
+cache_killfeed: true
+
+# how we cache the killfeed (if enabled)
+
+# %killer% - killer player's name
+# %victim% - victim player's name
+# %timenow% - current time in format: hh:mm:ss
+# %datenow% - current date in format: dd:mm:yyyy
+cache_message: "[%datenow% %timenow%] %killer% killed %victim%"
+# check out messages.yml for more!
